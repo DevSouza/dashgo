@@ -1,4 +1,5 @@
 import { Text } from "@chakra-ui/react";
+import { RiPlayListAddLine } from "react-icons/ri";
 
 export function Logo() {
   return (
@@ -12,3 +13,4 @@ export function Logo() {
     </Text>
   )
 }
+
