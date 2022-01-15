@@ -3,6 +3,8 @@ import { useSidebarDrawer } from "../../context/SidebarDrawerContext";
 import { SidebarNav } from "./SidebarNav";
 
 export function Sidebar() {
+  if(!process.browser) return (<></>);
+
   const { isOpen, onClose } = useSidebarDrawer();
 
   const isDrawerSidebar = useBreakpointValue({
@@ -12,7 +14,6 @@ export function Sidebar() {
 
   if (isDrawerSidebar) {
     return (
-      <>
       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
         <DrawerOverlay>
           <DrawerContent bg="gray.800" p="4">
@@ -25,15 +26,12 @@ export function Sidebar() {
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
-      </>
     )
   }
 
   return (
-    <>
-      <Box as="aside" w="64" mr="8"> 
-        <SidebarNav />
-      </Box>
-    </>
+    <Box as="aside" w="64" mr="8"> 
+      <SidebarNav />
+    </Box>
   );
 }
