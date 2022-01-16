@@ -8,6 +8,8 @@ type User = {
 };
 
 export function makeServer() {
+  console.log(`Make server mirage.`)
+
   const server = createServer({
     serializers: {
       application: ActiveModelSerializer
