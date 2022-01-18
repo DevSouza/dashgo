@@ -118,6 +118,8 @@ export default function UserList({ users }) {
   );
 }
 
+/*
+// Exemplo de como utilizar o ReactQuery com ssr
 export const getServerSideProps: GetServerSideProps = async () => {
   const { users, totalCount } = await getUsers(1);
 
@@ -127,3 +129,4 @@ export const getServerSideProps: GetServerSideProps = async () => {
     }
   }
 }
+*/
