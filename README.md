@@ -1,5 +1,8 @@
-# dashgo
-Projeto desenvolvido na trilha de ReactJs - Rocketseat
+# Construindo interfaces do futuro
+Nesse módulo criaremos a interface de um painel administrativo contendo fluxo de autenticação, dashboard, listagem e cadastro usando Chakra UI no Next.js.
+
+# Data fetching e cache local
+Nesse módulo vamos utilizar o React Query para melhorar a experiência de uso da nossa aplicação criando uma camada de cache de dados entre o front-end e back-end.
 
 # Login
 ![image](https://user-images.githubusercontent.com/24610869/150029624-74dad28a-a961-48fe-b9c6-516416b2943c.png)
